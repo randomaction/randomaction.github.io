@@ -2,4 +2,4 @@
 rst2html \
   --initial-header-level=2 \
   --stylesheet=/usr/share/docutils/writers/html4css1/html4css1.css,custom.css \
-  olymp2014.txt ../olymp2014.html
+  olymp2014.rst ../olymp2014.html
