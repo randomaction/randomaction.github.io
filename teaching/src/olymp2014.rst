@@ -103,7 +103,7 @@ __ http://www.unn.ru/bibn/files/law/perechen_2013-2014.pdf
 +-----+---------------------------------+--------------+-------------------+--------------------------------------+-------------------------+
 | —   | |ФСБ|                           | Академия ФСБ | ГУВД СПб          | декабрь 2013 – январь 2014 (?)       | дистанционный           |
 +-----+---------------------------------+--------------+-------------------+--------------------------------------+-------------------------+
-| —   | `Паруса надежды`_               | ПГУПС                            | декабрь 2013 – январь 2014 (?)       | дистанционный           |
+| —   | `Паруса надежды`_               | ПГУПС__                          | 25 декабря 2013 – 11 февраля 2014    | дистанционный           |
 +-----+---------------------------------+--------------+-------------------+--------------------------------------+-------------------------+
 
 __ http://eltech.ru/ru/abiturientam/olimpiady-shkolnikov/olimpiady-fizteh
@@ -111,6 +111,7 @@ __ http://tm.spbstu.ru/Lomonosov
 __ http://eltech.ru/ru/abiturientam/olimpiady-shkolnikov/olimpiada-rosatom
 __ http://www.voenmeh.ru/abiturients/olimp
 __ http://olymp.guap.ru/
+__ http://www.pgups.ru/abitur/olimpiady/parusa_nadegdy/
 
 .. _Городская открытая олимпиада: http://physolymp.spb.ru/
 .. _Интернет-олимпиада: http://distolymp2.spbu.ru/olymp/
@@ -123,7 +124,11 @@ __ http://olymp.guap.ru/
 .. _Инженерная олимпиада: http://eltech.ru/ru/abiturientam/olimpiady-shkolnikov/inzhenernaya-olimpiada-shkolnikov
 .. |ФСБ| replace:: `Межрегиональная олимпиада школьников на базе ведомственных образовательных учреждений`_
 .. _Межрегиональная олимпиада школьников на базе ведомственных образовательных учреждений: http://www.v-olymp.ru/volmp_physic/
-.. _Паруса надежды: http://www.pgups.ru/abitur/olimpiady/parusa_nadegdy/
+.. _Паруса надежды: http://miit.ru/portal/page/portal/miit/information?
+                    id_page=3077&id_pi_top=1265&id_pi_mmr=1271&id_pi_cpm=3&
+                    id_pi_st=3102&id_pi_mm=48&id_pi_m2l=5&id_pi_mmc=64&
+                    curr_page_mmc=1&curr_page_mmr=1&curr_page_st=1&view_mode_top=1&
+                    id_info_st=127031&ct_mmc=2&ct_mmr=2&id_info_mmr=2411&ct_st=3
 
 Олимпиады с финальным туром не дальше Москвы
 --------------------------------------------
