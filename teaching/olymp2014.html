@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.10: http://docutils.sourceforge.net/" />
+<meta name="generator" content="Docutils 0.11: http://docutils.sourceforge.net/" />
 <title>Олимпиады РСОШ, 2013/14 (физика)</title>
 <style type="text/css">
 
 /*
 :Author: David Goodger (goodger@python.org)
-:Id: $Id: html4css1.css 5196 2007-06-03 20:25:28Z wiemann $
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
 :Copyright: This stylesheet has been placed in the public domain.
 
 Default cascading style sheet for the HTML output of Docutils.
@@ -47,6 +47,10 @@ blockquote.epigraph {
 dl.docutils dd {
   margin-bottom: 0.5em }
 
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
 /* Uncomment (and remove this text!) to get bold-faced definition list terms
 dl.docutils dt {
   font-weight: bold }
@@ -73,7 +77,7 @@ div.tip p.admonition-title {
 
 div.attention p.admonition-title, div.caution p.admonition-title,
 div.danger p.admonition-title, div.error p.admonition-title,
-div.warning p.admonition-title {
+div.warning p.admonition-title, .code .error {
   color: red ;
   font-weight: bold ;
   font-family: sans-serif }
@@ -157,11 +161,38 @@ h2.subtitle {
 hr.docutils {
   width: 75% }
 
-img.align-left {
-  clear: left }
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
 
-img.align-right {
-  clear: right }
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
 
 ol.simple, ul.simple {
   margin-bottom: 1em }
@@ -216,12 +247,20 @@ p.topic-title {
 pre.address {
   margin-bottom: 0 ;
   margin-top: 0 ;
-  font-family: serif ;
-  font-size: 100% }
+  font: inherit }
 
-pre.literal-block, pre.doctest-block {
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
   margin-left: 2em ;
   margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
 
 span.classifier {
   font-family: sans-serif ;
@@ -273,6 +312,21 @@ table.docutils th.field-name, table.docinfo th.docinfo-name {
   text-align: left ;
   white-space: nowrap ;
   padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
 
 h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
 h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
@@ -366,22 +420,22 @@ border-collapse: collapse;
 <tr><td>1</td>
 <td><a class="reference external" href="http://physolymp.spb.ru/">Городская открытая олимпиада</a></td>
 <td colspan="2">СПбГУ, ЛЭТИ</td>
-<td><em>30&nbsp;ноября 2013</em></td>
+<td>30&nbsp;ноября 2013</td>
 <td>очный</td>
 </tr>
 <tr><td rowspan="2">1</td>
 <td rowspan="2"><a class="reference external" href="http://distolymp2.spbu.ru/olymp/">Интернет-олимпиада</a></td>
 <td colspan="2" rowspan="2">СПбГУ, ИТМО</td>
-<td><em>1–8&nbsp;декабря 2013</em></td>
+<td>1–8&nbsp;декабря 2013</td>
 <td rowspan="2">дистанционный (2&nbsp;ч)</td>
 </tr>
-<tr><td><strong>19–26&nbsp;января 2014</strong></td>
+<tr><td><strong>19–30&nbsp;января 2014</strong></td>
 </tr>
 <tr><td rowspan="2">1</td>
 <td rowspan="2"><a class="reference external" href="http://olymp.mipt.ru/">Физтех</a></td>
 <td rowspan="2">МФТИ</td>
 <td rowspan="2"><a class="reference external" href="http://eltech.ru/ru/abiturientam/olimpiady-shkolnikov/olimpiady-fizteh">ЛЭТИ</a></td>
-<td><em>4&nbsp;ноября 2013 – 20&nbsp;января 2014</em></td>
+<td>4&nbsp;ноября 2013 – 20&nbsp;января 2014</td>
 <td>заочный</td>
 </tr>
 <tr><td><strong>26&nbsp;января 2014</strong></td>
@@ -391,21 +445,21 @@ border-collapse: collapse;
 <td rowspan="3"><a class="reference external" href="http://olymp.msu.ru/">Ломоносов</a> (механика)</td>
 <td rowspan="3">МГУ</td>
 <td rowspan="3"><a class="reference external" href="http://tm.spbstu.ru/Lomonosov">СПбГПУ</a></td>
-<td><em>21–24&nbsp;ноября 2013</em></td>
+<td>21–24&nbsp;ноября 2013</td>
 <td rowspan="3">дистанционный (24&nbsp;ч)</td>
 </tr>
-<tr><td><em>16–19&nbsp;декабря 2013</em></td>
+<tr><td>16–19&nbsp;декабря 2013</td>
 </tr>
-<tr><td><em>19–22&nbsp;января 2014</em></td>
+<tr><td>19–22&nbsp;января 2014</td>
 </tr>
 <tr><td rowspan="2">2</td>
 <td rowspan="2"><a class="reference external" href="http://mephi.ru/entrant/olimpiads/rosatom/">Росатом</a></td>
 <td rowspan="2">МИФИ</td>
 <td rowspan="2"><a class="reference external" href="http://eltech.ru/ru/abiturientam/olimpiady-shkolnikov/olimpiada-rosatom">ЛЭТИ</a></td>
-<td><em>21&nbsp;декабря 2013</em></td>
+<td>21&nbsp;декабря 2013</td>
 <td>очный</td>
 </tr>
-<tr><td><em>27&nbsp;декабря 2013 – 20&nbsp;января 2014</em></td>
+<tr><td>27&nbsp;декабря 2013 – 20&nbsp;января 2014</td>
 <td>дистанционный (3&nbsp;ч)</td>
 </tr>
 <tr><td>3</td>
@@ -413,7 +467,7 @@ border-collapse: collapse;
 (физика, астрономия)</td>
 <td>МЦНМО, МГУ</td>
 <td>ЛЭТИ и др.</td>
-<td><em>29&nbsp;сентября 2013</em></td>
+<td>29&nbsp;сентября 2013</td>
 <td>очный</td>
 </tr>
 <tr><td>3</td>
@@ -429,10 +483,10 @@ border-collapse: collapse;
 <td><strong>28&nbsp;октября 2013 – 27&nbsp;января 2014</strong></td>
 <td>дистанционный (200&nbsp;мин)</td>
 </tr>
-<tr><td><em>9&nbsp;января&nbsp;2014</em></td>
+<tr><td>9&nbsp;января&nbsp;2014</td>
 <td>очный</td>
 </tr>
-<tr><td><em>19&nbsp;января&nbsp;2014</em></td>
+<tr><td>19&nbsp;января&nbsp;2014</td>
 <td>очный</td>
 </tr>
 <tr><td><a class="reference external" href="http://www.voenmeh.ru/abiturients/olimp">Военмех</a></td>
@@ -440,7 +494,7 @@ border-collapse: collapse;
 <td>заочный</td>
 </tr>
 <tr><td rowspan="2"><a class="reference external" href="http://www.spbstu.ru/education/entrance/olympiades.asp">СПбГПУ</a></td>
-<td><em>22&nbsp;декабря 2013</em></td>
+<td>22&nbsp;декабря 2013</td>
 <td>очный</td>
 </tr>
 <tr><td><strong>13–26&nbsp;января 2014</strong></td>
@@ -450,10 +504,10 @@ border-collapse: collapse;
 <td rowspan="2"><a class="reference external" href="http://eltech.ru/ru/abiturientam/olimpiady-shkolnikov/inzhenernaya-olimpiada-shkolnikov">Инженерная олимпиада</a></td>
 <td rowspan="2">5 ВУЗов</td>
 <td rowspan="2">ЛЭТИ</td>
-<td><em>15&nbsp;декабря 2013</em></td>
+<td>15&nbsp;декабря 2013</td>
 <td>очный</td>
 </tr>
-<tr><td><strong>1–24&nbsp;января 2014</strong></td>
+<tr><td>1–24&nbsp;января 2014</td>
 <td>дистанционный (3&nbsp;ч)</td>
 </tr>
 <tr><td>—</td>
@@ -502,36 +556,36 @@ border-collapse: collapse;
 <td rowspan="4">Департамент
 образования
 Москвы</td>
-<td><em>8–15&nbsp;декабря 2013</em></td>
+<td>8–15&nbsp;декабря 2013</td>
 <td rowspan="4">дистанционный (3&nbsp;ч)</td>
 </tr>
-<tr><td><em>23&nbsp;декабря 2013 – 8&nbsp;января 2014</em></td>
+<tr><td>23&nbsp;декабря 2013 – 8&nbsp;января 2014</td>
 </tr>
-<tr><td><em>9–12&nbsp;января 2014</em></td>
+<tr><td>9–12&nbsp;января 2014</td>
 </tr>
-<tr><td>январь 2014</td>
+<tr><td><strong>январь 2014</strong></td>
 </tr>
 <tr><td rowspan="3">1</td>
 <td rowspan="3"><a class="reference external" href="http://olymp.msu.ru/">Ломоносов</a></td>
 <td rowspan="3">Москва</td>
 <td rowspan="3">МГУ</td>
-<td><em>21–24&nbsp;ноября 2013</em></td>
+<td>21–24&nbsp;ноября 2013</td>
 <td rowspan="3">дистанционный (24&nbsp;ч)</td>
 </tr>
-<tr><td><em>16–19&nbsp;декабря 2013</em></td>
+<tr><td>16–19&nbsp;декабря 2013</td>
 </tr>
-<tr><td><em>19–22&nbsp;января 2014</em></td>
+<tr><td>19–22&nbsp;января 2014</td>
 </tr>
 <tr><td rowspan="3">1</td>
 <td rowspan="3"><a class="reference external" href="http://pvg.mk.ru/">Покори Воробьёвы горы!</a></td>
 <td rowspan="3">Москва</td>
 <td rowspan="3">МГУ</td>
-<td><em>11–17&nbsp;ноября 2013</em></td>
+<td>11–17&nbsp;ноября 2013</td>
 <td rowspan="3">дистанционный (48&nbsp;ч)</td>
 </tr>
-<tr><td><em>9–15&nbsp;декабря 2013</em></td>
+<tr><td>9–15&nbsp;декабря 2013</td>
 </tr>
-<tr><td><em>11–17&nbsp;января 2014</em></td>
+<tr><td>11–17&nbsp;января 2014</td>
 </tr>
 <tr><td>1</td>
 <td><a class="reference external" href="http://vsesib.nsesc.ru/">Всесибирская открытая олимпиада</a></td>
@@ -544,15 +598,15 @@ border-collapse: collapse;
 <td rowspan="3"><a class="reference external" href="http://www.energy-hope.ru/">Надежда энергетики</a></td>
 <td rowspan="3">Москва</td>
 <td rowspan="3">МЭИ</td>
-<td><em>30&nbsp;ноября – 3&nbsp;декабря 2013</em></td>
+<td>30&nbsp;ноября – 3&nbsp;декабря 2013</td>
 <td rowspan="3">заочный</td>
 </tr>
-<tr><td><em>24–27 декабря 2013</em></td>
+<tr><td>24–27 декабря 2013</td>
 </tr>
 <tr><td><div class="first last line-block">
 <div class="line">Олимпиада
 «<a class="reference external" href="http://olymp.hydroschool.ru/">Энергия образования</a>»</div>
-<div class="line"><strong>8–24&nbsp;января 2014</strong></div>
+<div class="line">8–24&nbsp;января 2014</div>
 </div>
 </td>
 </tr>
@@ -560,7 +614,7 @@ border-collapse: collapse;
 <td rowspan="2"><a class="reference external" href="http://www.unn.ru/bibn/">Будущие исследователи — будущее науки</a></td>
 <td rowspan="2">Ярославль</td>
 <td rowspan="2">ННГУ</td>
-<td><em>10&nbsp;декабря 2013 – 8&nbsp;января 2014</em></td>
+<td>10&nbsp;декабря 2013 – 8&nbsp;января 2014</td>
 <td rowspan="2">заочный</td>
 </tr>
 <tr><td><strong>30&nbsp;декабря 2013 – 25&nbsp;января 2014</strong>
@@ -572,7 +626,7 @@ border-collapse: collapse;
 Тверь,
 Москва</td>
 <td>ЮУрГУ</td>
-<td><em>20–31&nbsp;декабря 2013</em></td>
+<td>20–31&nbsp;декабря 2013</td>
 <td>заочный</td>
 </tr>
 <tr><td>—</td>
@@ -582,7 +636,7 @@ border-collapse: collapse;
 образования
 Москвы
 и др.</td>
-<td>c 24&nbsp;января 2014</td>
+<td><strong>24–31&nbsp;января 2014</strong></td>
 <td>заочный</td>
 </tr>
 </tbody>
@@ -624,11 +678,11 @@ border-collapse: collapse;
 <td rowspan="2"><a class="reference external" href="http://school.astro.spbu.ru/">Санкт-Петербургская астрономическая олимпиада</a></td>
 <td rowspan="2">Астрономия</td>
 <td rowspan="2">Санкт-Петербург</td>
-<td><em>2&nbsp;декабря 2013</em></td>
+<td>2&nbsp;декабря 2013</td>
 <td>очный</td>
 <td rowspan="2">&nbsp;</td>
 </tr>
-<tr><td><em>5&nbsp;декабря 2013 – 15&nbsp;января 2014</em></td>
+<tr><td>5&nbsp;декабря 2013 – 15&nbsp;января 2014</td>
 <td>заочный</td>
 </tr>
 <tr><td>3</td>
@@ -643,11 +697,11 @@ border-collapse: collapse;
 <td rowspan="3"><a class="reference external" href="http://olymp.msu.ru/">Ломоносов</a></td>
 <td rowspan="3">Геология</td>
 <td rowspan="3">Москва</td>
-<td><em>26–29&nbsp;ноября 2013</em></td>
+<td>26–29&nbsp;ноября 2013</td>
 <td rowspan="3">дистанционный (24&nbsp;ч)</td>
 <td rowspan="3">Задания по физике и математике</td>
 </tr>
-<tr><td><em>21–24&nbsp;декабря 2013</em></td>
+<tr><td>21–24&nbsp;декабря 2013</td>
 </tr>
 <tr><td><strong>24–27&nbsp;января 2014</strong></td>
 </tr>
@@ -655,11 +709,11 @@ border-collapse: collapse;
 <td rowspan="3"><a class="reference external" href="http://olymp.msu.ru/">Ломоносов</a></td>
 <td rowspan="3">Робототехника</td>
 <td rowspan="3">Москва</td>
-<td><em>26–29&nbsp;ноября 2013</em></td>
+<td>26–29&nbsp;ноября 2013</td>
 <td rowspan="3">дистанционный (24&nbsp;ч)</td>
 <td rowspan="3">Задания по физике, математике и программированию</td>
 </tr>
-<tr><td><em>21–24&nbsp;декабря 2013</em></td>
+<tr><td>21–24&nbsp;декабря 2013</td>
 </tr>
 <tr><td><strong>24–27&nbsp;января 2014</strong></td>
 </tr>
@@ -702,7 +756,7 @@ border-collapse: collapse;
 <td><a class="reference external" href="http://junior-fair.org/">Юниор</a></td>
 <td>Москва</td>
 <td>МИФИ</td>
-<td><em>ноябрь – 31&nbsp;декабря 2013</em></td>
+<td>ноябрь – 31&nbsp;декабря 2013</td>
 <td>заочный</td>
 <td>Конкурс научных работ.</td>
 </tr>
