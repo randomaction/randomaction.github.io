@@ -127,7 +127,7 @@ __ http://www.pgups.ru/abitur/olimpiady/parusa_nadegdy/
 .. _Физтех: http://olymp.mipt.ru/
 .. _Ломоносов: http://olymp.msu.ru/
 .. _Росатом: http://mephi.ru/entrant/olimpiads/rosatom/
-.. _Турнир им. Ломоносова: http://olympiads.mccme.ru/turlom/
+.. _Турнир им. Ломоносова: http://turlom.olimpiada.ru/
 .. _Олимпиада СПбГУ: http://abiturient.spbu.ru/index.php/russkij/olimpiada-shkolnikov
 .. _Аэрокосмическая олимпиада: http://www.spaceolymp.ru/
 .. _Инженерная олимпиада: http://eltech.ru/ru/abiturientam/
